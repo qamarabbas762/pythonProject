@@ -47,26 +47,26 @@ sample output==[1,2,3,4,5,6,7,8]
 
 """Correction for the above question """
 
-# def merge_list(l1,l2):
-#     i,j=0,0
-#     merged_list = []
-#
-#     while i< len(l1) and j< len(l2):
-#         if l1[i] < l2[j]:
-#             merged_list.append(l1[i])
-#             i+=1
-#         else:
-#             merged_list.append(l2[j])
-#             j+=1
-#
-#     merged_list.extend(l1[i:])
-#     merged_list.extend(l2[j:])
-#
-#     return merged_list
-#
-# list1 = [1,3,5,7]
-# list2 = [2,4,6,8]
-# print(merge_list(list1,list2))
+def merge_list(l1,l2):
+    i,j=0,0
+    merged_list = []
+
+    while i< len(l1) and j< len(l2):
+        if l1[i] < l2[j]:
+            merged_list.append(l1[i])
+            i+=1
+        else:
+            merged_list.append(l2[j])
+            j+=1
+
+    merged_list.extend(l1[i:])
+    merged_list.extend(l2[j:])
+
+    return merged_list
+
+list1 = [1,3,5,7]
+list2 = [2,4,6,8]
+print(merge_list(list1,list2))
 
 
 
